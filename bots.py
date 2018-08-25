@@ -100,8 +100,8 @@ class RankedHandPlayer(RandoPlayer):
     # Only considers the rank of its hand in making decisions.
     def __init__(self):
         super().__init__()
-        self.raise_rank = 15
-        self.check_rank = 60
+        self.raise_rank = 0
+        self.check_rank = 100
 
     def declare_action(self, valid_actions, hole_card, round_state):
         # valid_actions format => [fold_action_info, call_action_info, raise_action_info]
